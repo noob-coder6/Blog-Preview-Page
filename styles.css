@@ -1,0 +1,129 @@
+/* Import the "Figtree" font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap');
+
+/* A simple CSS Reset for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define colors and fonts from the style guide as CSS variables */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey-500: hsl(0, 0%, 42%);
+  --grey-950: hsl(0, 0%, 7%);
+  --font-family: 'Figtree', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--yellow);
+  font-size: 16px; /* Base font size from style guide */
+  color: var(--grey-950);
+
+  /* Use Flexbox to center the component perfectly on the page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--grey-950);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px var(--grey-950);
+  padding: 24px;
+  margin: 1.5rem;
+  max-width: 384px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 16px 16px 0px var(--grey-950);
+}
+
+.card__image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.card__tag {
+  background-color: var(--yellow);
+  color: var(--grey-950);
+  font-weight: 800;
+  font-size: 0.875rem; /* 14px */
+  padding: 4px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.card__date {
+  font-size: 0.875rem; /* 14px */
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.card__title {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.card__title a {
+  color: var(--grey-950);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.card__title a:hover,
+.card__title a:focus {
+  color: var(--yellow);
+}
+
+.card__description {
+  color: var(--grey-500);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__author-avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.card__author-name {
+  font-weight: 800;
+  font-size: 0.875rem; /* 14px */
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  padding: 10px;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+/* Media query for mobile view */
+@media (max-width: 375px) {
+  .card {
+    max-width: 327px;
+  }
+  .card__title {
+    font-size: 1.25rem; /* 20px */
+  }
+}

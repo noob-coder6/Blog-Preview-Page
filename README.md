@@ -1,83 +1,113 @@
-# Frontend Mentor - Blog preview card solution
+# Frontend Mentor - Blog Preview Card Solution
 
-This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
+## Table of Contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [The Challenge](#the-challenge)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [Built With](#built-with)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
-
-### The challenge
+### The Challenge
 
 Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
+- View the optimal layout for the component depending on their device's screen size
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Project Solution](https://github.com/noob-coder6/Blog-Preview-Page.git)
+- Live Site URL: [Blog Preview Page Website](https://noob-coder6.github.io/Blog-Preview-Page/)
 
-## My process
-
-### Built with
+### Built With
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- CSS custom properties (CSS variables)
+- Flexbox for layout
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Figtree](https://fonts.google.com/specimen/Figtree) - Google Font
+- VS Code - Code editor
+- Gemini Code Assist - AI assistance
+- Claude AI - Learning and understanding
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### What I Learned
 
-### What I learned
+This project helped me understand the fundamentals of HTML structure and CSS styling. Here are some key takeaways:
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
+**1. Semantic HTML Structure**
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<article class="card">
+  <div class="card__content">
+    <!-- Content goes here -->
+  </div>
+</article>
 ```
+
+**2. CSS Custom Properties for Maintainability**
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --grey-950: hsl(0, 0%, 7%);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+**3. Flexbox for Centering**
+```css
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+```
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+**4. Creating Brutalist Design with Box Shadows**
+```css
+.card {
+  box-shadow: 8px 8px 0px var(--grey-950);
+  transition: box-shadow 0.3s ease-in-out;
+}
 
-### Continued development
+.card:hover {
+  box-shadow: 16px 16px 0px var(--grey-950);
+}
+```
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+This challenge particularly helped me understand:
+- BEM naming convention for CSS classes
+- Using Flexbox for positioning and alignment
+- Creating smooth hover transitions
+- Implementing responsive design with media queries
+- The importance of semantic HTML for accessibility
 
+### Continued Development
+
+In future projects, I want to focus on:
+
+- Advanced CSS animations and transitions
+- CSS Grid for complex layouts
+- JavaScript for interactive components
+- Accessibility best practices
+- Performance optimization techniques
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@noob-coder6](https://www.frontendmentor.io/profile/noob-coder6)
+- GitHub - [@noob-coder6](https://github.com/noob-coder6)
+
+## Acknowledgments
+
+Special thanks to:
+- Frontend Mentor for providing this challenge
+- Gemini Code Assist for code refinement suggestions
+- Claude AI for helping me understand new concepts and best practices
+- The Frontend Mentor community for inspiration and feedback
+
+---
 
 
